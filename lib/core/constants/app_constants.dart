@@ -6,16 +6,20 @@ class AppConstants {
   static const String appName = 'FashionStore';
   static const String appVersion = '1.0.0';
 
-  // Supabase - REEMPLAZAR CON TUS CREDENCIALES
-  static const String supabaseUrl = 'YOUR_SUPABASE_URL';
-  static const String supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
+  // Supabase
+  static const String supabaseUrl = 'https://lswokdjpfmsxczkeyvft.supabase.co';
+  static const String supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxzd29rZGpwZm1zeGN6a2V5dmZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgyMDY2NTcsImV4cCI6MjA4Mzc4MjY1N30._QQu-zV793LKYZg826TniyGMWpnDycK2yHOVf9PHORc';
 
-  // Stripe - REEMPLAZAR CON TUS CREDENCIALES
-  static const String stripePublishableKey = 'YOUR_STRIPE_PUBLISHABLE_KEY';
+  // Stripe
+  static const String stripePublishableKey = 'pk_test_51SLLYiLLsVBEq7m5Ll2L4Qz4Wgpjv0RU5ftnUYWhQ6u2VmP5CJnmmwI3uGNmeTgB8uHytNflRz42D8VYfxZekcxr00glpaF1G9';
   static const String stripeMerchantId = 'com.fashionstore';
 
   // Cloudinary
-  static const String cloudinaryBaseUrl = 'https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/';
+  static const String cloudinaryCloudName = 'dmgrt2aua';
+  static const String cloudinaryBaseUrl = 'https://res.cloudinary.com/dmgrt2aua/image/upload/';
+
+  // Site URL
+  static const String siteUrl = 'http://cintasfashionstore.victoriafp.online';
 
   // Timeouts
   static const int connectionTimeout = 30000; // 30 segundos
