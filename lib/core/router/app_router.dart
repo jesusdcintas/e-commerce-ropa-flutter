@@ -99,13 +99,8 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: '/catalog',
             name: 'catalog',
-            pageBuilder: (context, state) => NoTransitionPage(
-              child: CatalogScreen(
-                categoryId: state.uri.queryParameters['category'] != null
-                    ? int.tryParse(state.uri.queryParameters['category']!)
-                    : null,
-                search: state.uri.queryParameters['search'],
-              ),
+            pageBuilder: (context, state) => const NoTransitionPage(
+              child: CatalogScreen(),
             ),
           ),
           GoRoute(

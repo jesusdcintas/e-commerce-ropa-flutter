@@ -38,6 +38,15 @@ class Product {
 
   /// ¿Tiene oferta activa?
   bool get hasOffer => originalPrice != null && originalPrice! > price;
+  
+  /// Alias para compatibilidad
+  bool get hasActiveOffer => hasOffer;
+
+  /// Precio final (alias de price)
+  int get finalPrice => price;
+
+  /// ¿Tiene stock disponible?
+  bool get isInStock => totalStock > 0;
 
   /// Porcentaje de descuento
   int get discountPercentage {
